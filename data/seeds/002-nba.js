@@ -114,7 +114,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 15,
       teamAwayPointsMade: 4717,
       teamAwayPointsSaw: 4679,
-      teamLogo: "require('../images/milwaukee.png')"
+      teamLogo: "/static/media/milwaukee.93665fa8b8296911b369.png"
     },
     {
       teamId: 2,
@@ -132,7 +132,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 16,
       teamAwayPointsMade: 4730,
       teamAwayPointsSaw: 4607,
-      teamLogo: "require('../images/boston.png')"
+      teamLogo: "/static/media/boston.c8430eebed6b8a2013f1.png"
     },
     {
       teamId: 3,
@@ -150,7 +150,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 16,
       teamAwayPointsMade: 4766,
       teamAwayPointsSaw: 4603,
-      teamLogo: "require('../images/sixers.png')"
+      teamLogo: "/static/media/sixers.61e661d39f89ae53b1da.png"
     },
     {
       teamId: 4,
@@ -168,7 +168,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 21,
       teamAwayPointsMade: 4565,
       teamAwayPointsSaw: 4460,
-      teamLogo: "require('../images/cavs.png')"
+      teamLogo: "/static/media/cavs.7a761a3e3f701f177ade.png"
     },
     {
       teamId: 5,
@@ -186,7 +186,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 17,
       teamAwayPointsMade: 4706,
       teamAwayPointsSaw: 4641,
-      teamLogo: "require('../images/knicks.png')"
+      teamLogo: "/static/media/knicks.2736496653e604cc03ee.png"
     },
     {
       teamId: 6,
@@ -204,7 +204,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 19,
       teamAwayPointsMade: 4661,
       teamAwayPointsSaw: 4713,
-      teamLogo: "require('../images/brooklyn.png')"
+      teamLogo: "/static/media/brooklyn.aa9beecbd98108e919e6.png"
     },
     {
       teamId: 7,
@@ -222,7 +222,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 24,
       teamAwayPointsMade: 4806,
       teamAwayPointsSaw: 4874,
-      teamLogo: "require('../images/atlanta.png')"
+      teamLogo: "/static/media/atlanta.283f9c3d47b6b13f6799.png"
     },
     {
       teamId: 8,
@@ -240,7 +240,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 24,
       teamAwayPointsMade: 4408,
       teamAwayPointsSaw: 4483,
-      teamLogo: "require('../images/miami.png')"
+      teamLogo: "/static/media/miami.f8574ca51d7c408dc939.png"
     },
     {
       teamId: 9,
@@ -258,7 +258,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 27,
       teamAwayPointsMade: 4565,
       teamAwayPointsSaw: 4634,
-      teamLogo: "require('../images/toronto.png')"
+      teamLogo: "/static/media/toronto.68d84a008436cfb6c4e3.png"
     },
     {
       teamId: 10,
@@ -276,7 +276,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 23,
       teamAwayPointsMade: 4600,
       teamAwayPointsSaw: 4612,
-      teamLogo: "require('../images/bulls.png')"
+      teamLogo: "/static/media/bulls.357435744acfd81e76b5.png"
     },
     {
       teamId: 11,
@@ -294,7 +294,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 26,
       teamAwayPointsMade: 4659,
       teamAwayPointsSaw: 4887,
-      teamLogo: "require('../images/indiana.png')"
+      teamLogo: "/static/media/indiana.e2c22c5623bf8267437d.png"
     },
     {
       teamId: 12,
@@ -312,7 +312,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 25,
       teamAwayPointsMade: 4595,
       teamAwayPointsSaw: 4679,
-      teamLogo: "require('../images/wizards.png')"
+      teamLogo: "/static/media/wizards.ab319e99ee61f62340ce.png"
     },
     {
       teamId: 13,
@@ -330,7 +330,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 27,
       teamAwayPointsMade: 4449,
       teamAwayPointsSaw: 4642,
-      teamLogo: "require('../images/orlando.png')"
+      teamLogo: "/static/media/orlando.c2dcadf00d44268545d6.png"
     },
     {
       teamId: 14,
@@ -366,7 +366,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 33,
       teamAwayPointsMade: 4440,
       teamAwayPointsSaw: 4860,
-      teamLogo: "require('../images/detroit.png')"
+      teamLogo: "/static/media/hornets.f756a0d24ee86ae535c0.png"
     },
     // Batı Konferansı
     {
@@ -385,7 +385,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 22,
       teamAwayPointsMade: 4600,
       teamAwayPointsSaw: 4728,
-      teamLogo: "require('../images/denver.png')"
+      teamLogo: "/static/media/denver.f535da0f55d863746674.png"
     },
     {
       teamId: 17,
@@ -403,7 +403,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 25,
       teamAwayPointsMade: 4676,
       teamAwayPointsSaw: 4787,
-      teamLogo: "require('../images/memphis.png')"
+      teamLogo: "/static/media/memphis.a3c8eb86efd239155ef7.png"
     },
     {
       teamId: 18,
@@ -421,7 +421,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 16,
       teamAwayPointsMade: 4840,
       teamAwayPointsSaw: 4757,
-      teamLogo: "require('../images/kings.png')"
+      teamLogo: "/static/media/kings.d4f7f33ecec3d6167911.png"
     },
     {
       teamId: 19,
@@ -439,7 +439,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 24,
       teamAwayPointsMade: 4641,
       teamAwayPointsSaw: 4670,
-      teamLogo: "require('../images/suns.png')"
+      teamLogo: "/static/media/suns.a3af1ee80806608d4b13.png"
     },
     {
       teamId: 20,
@@ -457,7 +457,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 20,
       teamAwayPointsMade: 4691,
       teamAwayPointsSaw: 4739,
-      teamLogo: "require('../images/clippers.png')"
+      teamLogo: "/static/media/clippers.8be15efbae80e6fdcaec.png"
     },
     {
       teamId: 21,
@@ -475,7 +475,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 30,
       teamAwayPointsMade: 4845,
       teamAwayPointsSaw: 5021,
-      teamLogo: "require('../images/warriors.png')"
+      teamLogo: "/static/media/warriors.25afdfbc473308c017a8.png"
     },
     {
       teamId: 22,
@@ -493,7 +493,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 21,
       teamAwayPointsMade: 4810,
       teamAwayPointsSaw: 4895,
-      teamLogo: "require('../images/lakers.png')"
+      teamLogo: "/static/media/lakers.f8a7b4214dab2f3562d9.png"
     },
     {
       teamId: 23,
@@ -511,11 +511,11 @@ exports.seed = async function (knex) {
       teamAwayLosses: 21,
       teamAwayPointsMade: 4741,
       teamAwayPointsSaw: 4781,
-      teamLogo: "require('../images/minnesota.png')"
+      teamLogo: "/static/media/minnesota.58efdf06c4840c4d0e96.png"
     },
     {
       teamId: 24,
-      teamName: "Oklahome City Thunder",
+      teamName: "Oklahoma City Thunder",
       teamWins: 40,
       teamLoss: 42,
       teamPointsMade: 9633,
@@ -529,7 +529,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 25,
       teamAwayPointsMade: 4679,
       teamAwayPointsSaw: 4803,
-      teamLogo: "require('../images/thunder.png')"
+      teamLogo: "/static/media/thunder.4ca2ee498f276eea7166.png"
     },
     {
       teamId: 25,
@@ -547,7 +547,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 26,
       teamAwayPointsMade: 4666,
       teamAwayPointsSaw: 4716,
-      teamLogo: "require('../images/pelicans.png')"
+      teamLogo: "/static/media/pelicans.ff8f683efc654a1de368.png"
     },
     {
       teamId: 26,
@@ -565,7 +565,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 26,
       teamAwayPointsMade: 4636,
       teamAwayPointsSaw: 4740,
-      teamLogo: "require('../images/dallas.png')"
+      teamLogo: "/static/media/dallas.420fd67004b112ef1454.png"
     },
     {
       teamId: 27,
@@ -583,7 +583,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 27,
       teamAwayPointsMade: 4764,
       teamAwayPointsSaw: 4885,
-      teamLogo: "require('../images/utah.png')"
+      teamLogo: "/static/media/utah.ecd3f8b7af41f3124fc8.png"
     },
     {
       teamId: 28,
@@ -601,7 +601,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 25,
       teamAwayPointsMade: 4559,
       teamAwayPointsSaw: 4736,
-      teamLogo: "require('../images/portland.png')"
+      teamLogo: "/static/media/portland.1dd5feee13f322f0918a.png"
     },
     {
       teamId: 29,
@@ -619,7 +619,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 33,
       teamAwayPointsMade: 4540,
       teamAwayPointsSaw: 5004,
-      teamLogo: "require('../images/rockets.png')"
+      teamLogo: "/static/media/rockets.10212dccdf7642311c26.png"
     },
     {
       teamId: 30,
@@ -637,7 +637,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 33,
       teamAwayPointsMade: 4540,
       teamAwayPointsSaw: 5004,
-      teamLogo: "require('../images/spurs.png')"
+      teamLogo: "/static/media/spurs.5682f3256ba5665c91a1.png"
     },
   ]);
 
