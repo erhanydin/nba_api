@@ -25,7 +25,7 @@ server.use(express.json());
 
 server.use('/api/auth', authRouter);
 server.use('/api/users', userRouter);
-server.use('/api/news', md.tokenCheck, newsRouter);
+server.use('/api/news', newsRouter);
 
 server.use("/api/players", playerRouter);
 server.use("/api/teams", teamsRouter);

@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const newsModel = require('./news-model');
 const middleware = require('./news-middleware');
+const mToken = require('../auth/auth-middleware')
 
 router.get('/', async (req, res, next) => {
     console.log(req.decodeToken)
@@ -30,7 +31,7 @@ router.get('/team/:teamId', async (req, res, next) => {
     }
 })
 
-router.post('/', middleware.roleNameCheckForNews, middleware.payloadCheckForNews, async (req, res, next) => {
+router.post('/', mToken.tokenCheck, middleware.roleNameCheckForNews, middleware.payloadCheckForNews, async (req, res, next) => {
     try {
         const { newsHeader_1, newsHeader_2, newsHeader_3, newsDetails, newsImage, teamId } = req.body;
 
@@ -52,7 +53,7 @@ router.post('/', middleware.roleNameCheckForNews, middleware.payloadCheckForNews
     }
 })
 
-router.put('/:newsId', middleware.roleNameCheckForNews, middleware.payloadCheckForNews, async (req, res, next) => {
+router.put('/:newsId', mToken.tokenCheck, middleware.roleNameCheckForNews, middleware.payloadCheckForNews, async (req, res, next) => {
     try {
         const { newsHeader_1, newsHeader_2, newsHeader_3, newsDetails, newsImage, teamId } = req.body;
 
@@ -73,7 +74,7 @@ router.put('/:newsId', middleware.roleNameCheckForNews, middleware.payloadCheckF
     }
 })
 
-router.delete('/:newsId', middleware.roleNameCheckForNews, async (req, res, next) => {
+router.delete('/:newsId', mToken.tokenCheck, middleware.roleNameCheckForNews, async (req, res, next) => {
     try {
         let willBeDeletedNews = await newsModel.deleteNews(req.params.newsId);
         res.json(willBeDeletedNews);
