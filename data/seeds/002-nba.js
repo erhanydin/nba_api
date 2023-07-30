@@ -114,7 +114,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 15,
       teamAwayPointsMade: 4717,
       teamAwayPointsSaw: 4679,
-      teamLogo: '../images/milwaukee.png'
+      teamLogo: "require('../images/milwaukee.png')"
     },
     {
       teamId: 2,
@@ -132,7 +132,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 16,
       teamAwayPointsMade: 4730,
       teamAwayPointsSaw: 4607,
-      teamLogo: '../images/boston.png'
+      teamLogo: "require('../images/boston.png')"
     },
     {
       teamId: 3,
@@ -150,7 +150,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 16,
       teamAwayPointsMade: 4766,
       teamAwayPointsSaw: 4603,
-      teamLogo: '../images/sixers.png'
+      teamLogo: "require('../images/sixers.png')"
     },
     {
       teamId: 4,
@@ -168,7 +168,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 21,
       teamAwayPointsMade: 4565,
       teamAwayPointsSaw: 4460,
-      teamLogo: '../images/cavs.png'
+      teamLogo: "require('../images/cavs.png')"
     },
     {
       teamId: 5,
@@ -186,7 +186,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 17,
       teamAwayPointsMade: 4706,
       teamAwayPointsSaw: 4641,
-      teamLogo: '../images/knicks.png'
+      teamLogo: "require('../images/knicks.png')"
     },
     {
       teamId: 6,
@@ -204,7 +204,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 19,
       teamAwayPointsMade: 4661,
       teamAwayPointsSaw: 4713,
-      teamLogo: '../images/brooklyn.png'
+      teamLogo: "require('../images/brooklyn.png')"
     },
     {
       teamId: 7,
@@ -222,7 +222,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 24,
       teamAwayPointsMade: 4806,
       teamAwayPointsSaw: 4874,
-      teamLogo: '../images/atlanta.png'
+      teamLogo: "require('../images/atlanta.png')"
     },
     {
       teamId: 8,
@@ -240,7 +240,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 24,
       teamAwayPointsMade: 4408,
       teamAwayPointsSaw: 4483,
-      teamLogo: '../images/miami.png'
+      teamLogo: "require('../images/miami.png')"
     },
     {
       teamId: 9,
@@ -258,7 +258,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 27,
       teamAwayPointsMade: 4565,
       teamAwayPointsSaw: 4634,
-      teamLogo: '../images/toronto.png'
+      teamLogo: "require('../images/toronto.png')"
     },
     {
       teamId: 10,
@@ -276,7 +276,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 23,
       teamAwayPointsMade: 4600,
       teamAwayPointsSaw: 4612,
-      teamLogo: '../images/bulls.png'
+      teamLogo: "require('../images/bulls.png')"
     },
     {
       teamId: 11,
@@ -294,7 +294,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 26,
       teamAwayPointsMade: 4659,
       teamAwayPointsSaw: 4887,
-      teamLogo: '../images/indiana.png'
+      teamLogo: "require('../images/indiana.png')"
     },
     {
       teamId: 12,
@@ -312,7 +312,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 25,
       teamAwayPointsMade: 4595,
       teamAwayPointsSaw: 4679,
-      teamLogo: '../images/wizards.png'
+      teamLogo: "require('../images/wizards.png')"
     },
     {
       teamId: 13,
@@ -330,7 +330,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 27,
       teamAwayPointsMade: 4449,
       teamAwayPointsSaw: 4642,
-      teamLogo: '../images/orlando.png'
+      teamLogo: "require('../images/orlando.png')"
     },
     {
       teamId: 14,
@@ -348,7 +348,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 27,
       teamAwayPointsMade: 4619,
       teamAwayPointsSaw: 4848,
-      teamLogo: '../images/hornets.png'
+      teamLogo: "require('../images/hornets.png')"
     },
     {
       teamId: 15,
@@ -366,7 +366,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 33,
       teamAwayPointsMade: 4440,
       teamAwayPointsSaw: 4860,
-      teamLogo: '../images/detroit.png'
+      teamLogo: "require('../images/detroit.png')"
     },
     // Batı Konferansı
     {
@@ -385,7 +385,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 22,
       teamAwayPointsMade: 4600,
       teamAwayPointsSaw: 4728,
-      teamLogo: '../images/denver.png'
+      teamLogo: "require('../images/denver.png')"
     },
     {
       teamId: 17,
@@ -403,7 +403,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 25,
       teamAwayPointsMade: 4676,
       teamAwayPointsSaw: 4787,
-      teamLogo: '../images/memphis.png'
+      teamLogo: "require('../images/memphis.png')"
     },
     {
       teamId: 18,
@@ -421,7 +421,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 16,
       teamAwayPointsMade: 4840,
       teamAwayPointsSaw: 4757,
-      teamLogo: '../images/kings.png'
+      teamLogo: "require('../images/kings.png')"
     },
     {
       teamId: 19,
@@ -439,7 +439,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 24,
       teamAwayPointsMade: 4641,
       teamAwayPointsSaw: 4670,
-      teamLogo: '../images/suns.png'
+      teamLogo: "require('../images/suns.png')"
     },
     {
       teamId: 20,
@@ -457,7 +457,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 20,
       teamAwayPointsMade: 4691,
       teamAwayPointsSaw: 4739,
-      teamLogo: '../images/clippers.png'
+      teamLogo: "require('../images/clippers.png')"
     },
     {
       teamId: 21,
@@ -475,7 +475,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 30,
       teamAwayPointsMade: 4845,
       teamAwayPointsSaw: 5021,
-      teamLogo: '../images/warriors.png'
+      teamLogo: "require('../images/warriors.png')"
     },
     {
       teamId: 22,
@@ -493,7 +493,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 21,
       teamAwayPointsMade: 4810,
       teamAwayPointsSaw: 4895,
-      teamLogo: '../images/lakers.png'
+      teamLogo: "require('../images/lakers.png')"
     },
     {
       teamId: 23,
@@ -511,7 +511,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 21,
       teamAwayPointsMade: 4741,
       teamAwayPointsSaw: 4781,
-      teamLogo: '../images/minnesota.png'
+      teamLogo: "require('../images/minnesota.png')"
     },
     {
       teamId: 24,
@@ -529,7 +529,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 25,
       teamAwayPointsMade: 4679,
       teamAwayPointsSaw: 4803,
-      teamLogo: '../images/thunder.png'
+      teamLogo: "require('../images/thunder.png')"
     },
     {
       teamId: 25,
@@ -547,7 +547,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 26,
       teamAwayPointsMade: 4666,
       teamAwayPointsSaw: 4716,
-      teamLogo: '../images/pelicans.png'
+      teamLogo: "require('../images/pelicans.png')"
     },
     {
       teamId: 26,
@@ -565,7 +565,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 26,
       teamAwayPointsMade: 4636,
       teamAwayPointsSaw: 4740,
-      teamLogo: '../images/dallas.png'
+      teamLogo: "require('../images/dallas.png')"
     },
     {
       teamId: 27,
@@ -583,7 +583,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 27,
       teamAwayPointsMade: 4764,
       teamAwayPointsSaw: 4885,
-      teamLogo: '../images/utah.png'
+      teamLogo: "require('../images/utah.png')"
     },
     {
       teamId: 28,
@@ -601,7 +601,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 25,
       teamAwayPointsMade: 4559,
       teamAwayPointsSaw: 4736,
-      teamLogo: '../images/portland.png'
+      teamLogo: "require('../images/portland.png')"
     },
     {
       teamId: 29,
@@ -619,7 +619,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 33,
       teamAwayPointsMade: 4540,
       teamAwayPointsSaw: 5004,
-      teamLogo: '../images/rockets.png'
+      teamLogo: "require('../images/rockets.png')"
     },
     {
       teamId: 30,
@@ -637,7 +637,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 33,
       teamAwayPointsMade: 4540,
       teamAwayPointsSaw: 5004,
-      teamLogo: '../images/spurs.png'
+      teamLogo: "require('../images/spurs.png')"
     },
   ]);
 
