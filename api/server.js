@@ -10,6 +10,7 @@ const gamesRouter = require('./nba/nba-games');
 const gstatsRouter = require('./nba/nba-generalStats');
 const pstatsRouter = require('./nba/nba-personalStats');
 const bestOfRouter = require('./nba/nba-bestOfs');
+const bofRouter = require('./nba/nba-bof');
 
 const authRouter = require('./auth/auth-router')
 const userRouter = require('./user/user-router');
@@ -33,6 +34,7 @@ server.use("/api/games", gamesRouter)
 server.use("/api/general", gstatsRouter);
 server.use('/api/personal', pstatsRouter);
 server.use('/api/bests', bestOfRouter);
+server.use('/api/bof', bofRouter);
 server.use('/api/favs', md.tokenCheck, favsRouter);
 server.use('/api/notes', notesRouter)
 

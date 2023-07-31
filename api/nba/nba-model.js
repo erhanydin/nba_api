@@ -96,12 +96,31 @@ async function getPersonalStatsBySeriesIdAndGameId(seriesId, gameId) {
 
 async function leads(variable) {
     const bests = await db('players')
-            .innerJoin('teams', 'players.teamId', 'teams.teamId')
-            .select('players.*', 'teams.teamName', 'teams.teamLogo')
-            .where('players.playerGame', '>', '53')
-            .orderBy(`players.${variable}`, 'desc')
-            .limit(10)
+        .innerJoin('teams', 'players.teamId', 'teams.teamId')
+        .select('players.*', 'teams.teamName', 'teams.teamLogo')
+        .where('players.playerGame', '>', '53')
+        .orderBy(`players.${variable}`, 'desc')
+        .limit(10)
+    
     return bests;
+}
+
+async function bestOfSeries(seriesId) {
+    const bestOf = await db('personalStats')
+        .select('players.playerName', 'players.playerId', 'personalStats.teamId')
+        .select(db.raw('sum(personalStats.playerTime) / count(personalStats.gameId) as tpg'))
+        .select(db.raw('sum(personalStats.playerPts) / count(personalStats.gameId) as ppg'))
+        .select(db.raw('sum(personalStats.playerReb) / count(personalStats.gameId) as rpg'))
+        .select(db.raw('sum(personalStats.playerAst) / count(personalStats.gameId) as apg'))
+        .select(db.raw('sum(personalStats.playerBlk) as totalBlocks'))
+        .select(db.raw('sum(personalStats.playerStl) as totalSteals'))
+        .select(db.raw('count(personalStats.gameId) as gameCounts'))
+        .leftJoin('players', 'players.playerId', 'personalStats.playerId')
+        .where('personalStats.seriesId', seriesId)
+        .groupBy('personalStats.playerId')
+        .orderBy('ppg', 'desc')
+    
+    return bestOf
 }
 
 module.exports = {
@@ -118,5 +137,6 @@ module.exports = {
     getGamesBySeriesIdAndGameId,
     getGeneralStatsBySeriesIdAndGameId,
     getPersonalStatsBySeriesIdAndGameId,
-    leads
+    leads,
+    bestOfSeries
 }
