@@ -101,7 +101,7 @@ async function leads(variable) {
         .where('players.playerGame', '>', '53')
         .orderBy(`players.${variable}`, 'desc')
         .limit(10)
-    
+
     return bests;
 }
 
@@ -114,12 +114,18 @@ async function bestOfSeries(seriesId) {
         .select(db.raw('sum(personalStats.playerAst) / count(personalStats.gameId) as apg'))
         .select(db.raw('sum(personalStats.playerBlk) as totalBlocks'))
         .select(db.raw('sum(personalStats.playerStl) as totalSteals'))
+        .select(db.raw('sum(personalStats.player2PtsMade) as twoPMade'))
+        .select(db.raw('sum(personalStats.player2PtsTry) as twoPTry'))
+        .select(db.raw('sum(personalStats.player3PtsMade) as threePMade'))
+        .select(db.raw('sum(personalStats.player3PtsTry) as threePTry'))
+        .select(db.raw('sum(personalStats.playerFtMade) as ftMade'))
+        .select(db.raw('sum(personalStats.playerFtTry) as ftTry'))
         .select(db.raw('count(personalStats.gameId) as gameCounts'))
-        .leftJoin('players', 'players.playerId', 'personalStats.playerId')
-        .where('personalStats.seriesId', seriesId)
-        .groupBy('personalStats.playerId')
-        .orderBy('ppg', 'desc')
-    
+            .leftJoin('players', 'players.playerId', 'personalStats.playerId')
+            .where('personalStats.seriesId', seriesId)
+            .groupBy('personalStats.playerId')
+            .orderBy('ppg', 'desc')
+
     return bestOf
 }
 
