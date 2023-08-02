@@ -58,7 +58,28 @@ async function getGames(seriesId) {
         .select('games.id', 'games.seriesId', 'games.gameId', 'games.firstTeamId', 'teams.teamName as firstTeamName', 'teams.teamLogo as firstTeamLogo', 'games.firstTeamScore',
             'games.secondTeamId', 'games.secondTeamScore', 'teams_1.teamName as secondTeamName', 'teams_1.teamLogo as secondTeamLogo')
         .where('games.seriesId', seriesId)
-    return games;
+
+    let newGames = []    
+    let ftWins = 0;
+    let stWins = 0;
+
+    for (let i = 0; i < games.length; i++) {
+        let ftScore = games[i].firstTeamScore;
+        let stScore = games[i].secondTeamScore;
+        
+        if(ftScore > stScore) {
+            ftWins += 1;
+        } else {
+            stWins +=1;
+        }
+
+        let newGame = {...games[i], ftWins: ftWins, stWins: stWins}
+        newGames.push(newGame);
+    }
+
+    console.log(newGames)
+    
+    return newGames;
 }
 
 async function getGamesBySeriesIdAndGameId(seriesId, gameId) {
