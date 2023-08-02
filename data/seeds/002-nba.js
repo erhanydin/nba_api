@@ -348,7 +348,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 27,
       teamAwayPointsMade: 4619,
       teamAwayPointsSaw: 4848,
-      teamLogo: "require('../images/hornets.png')"
+      teamLogo: "/static/media/hornets.f756a0d24ee86ae535c0.png"
     },
     {
       teamId: 15,
@@ -366,7 +366,7 @@ exports.seed = async function (knex) {
       teamAwayLosses: 33,
       teamAwayPointsMade: 4440,
       teamAwayPointsSaw: 4860,
-      teamLogo: "/static/media/hornets.f756a0d24ee86ae535c0.png"
+      teamLogo: "/static/media/detroit.16d937124dcfb504df2f.png"
     },
     // Batı Konferansı
     {
