@@ -38,7 +38,9 @@ router.post('/login', md.payloadCheck, md.passwordCheck, async (req, res, next) 
         }, JWT_SECRET, { expiresIn: "1d" });
         res.status(200).json({
             message: `Hoşgeldin ${req.user.username}`,
-            token: token
+            token: token,
+            role_id: req.user.role_id,
+            user_id: req.user.user_id
         });
         console.log(`Hoşgeldin ${req.user.username}`)
     } catch (error) {
