@@ -35,7 +35,7 @@ server.use("/api/general", gstatsRouter);
 server.use('/api/personal', pstatsRouter);
 server.use('/api/bests', bestOfRouter);
 server.use('/api/bof', bofRouter);
-server.use('/api/favs', md.tokenCheck, favsRouter);
+server.use('/api/favs', favsRouter);
 server.use('/api/notes', notesRouter)
 
 

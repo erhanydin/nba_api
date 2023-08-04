@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const favsModel = require('./favs-model');
 const md = require('./favs-middleware');
+const mdAuth = require('../auth/auth-middleware')
 
 
 
@@ -22,7 +23,7 @@ router.get('/:favs_id', async (req, res, next) => {
     }
 })
 
-router.get('/user/:user_id', md.userNameCheckForFetchingByUsername, async (req, res, next) => {
+router.get('/user/:user_id', mdAuth.tokenCheck, md.userNameCheckForFetchingByUsername, async (req, res, next) => {
     try {
         let fav = await favsModel.getFavsByUsername(req.params.user_id);
         res.json(fav);
@@ -31,7 +32,7 @@ router.get('/user/:user_id', md.userNameCheckForFetchingByUsername, async (req, 
     }
 })
 
-router.post("/", md.userNameCheckForAddFavs, async (req, res, next) => {
+router.post("/", mdAuth.tokenCheck, md.userNameCheckForAddFavs, async (req, res, next) => {
     try {
         const {type, type_id, user_id} = req.body;
         if(!type && !type_id && !user_id) {
@@ -51,7 +52,7 @@ router.post("/", md.userNameCheckForAddFavs, async (req, res, next) => {
     }
 })
 
-router.delete('/:favs_id', md.userNameCheckForDeleteFavs, async(req, res, next) => {
+router.delete('/:favs_id', mdAuth.tokenCheck, md.userNameCheckForDeleteFavs, async(req, res, next) => {
     try {
         await favsModel.deleteFav(req.params.favs_id);
         res.json({message: 'Favorilerden başarıyla kaldırıldı'})
