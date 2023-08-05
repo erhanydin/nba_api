@@ -82,6 +82,20 @@ async function getGames(seriesId) {
     return newGames;
 }
 
+async function getGamesById(id) {
+    const game = await db('games')
+        .innerJoin('teams', 'games.firstTeamId', 'teams.teamId')
+        .leftJoin('teams as teams_1', 'games.secondTeamId', 'teams_1.teamId')
+        .select('games.id', 'games.seriesId', 'games.gameId', 'games.firstTeamId', 'teams.teamName as firstTeamName', 'teams.teamLogo as firstTeamLogo', 'games.firstTeamScore',
+            'games.secondTeamId', 'games.secondTeamScore', 'teams_1.teamName as secondTeamName', 'teams_1.teamLogo as secondTeamLogo')
+        .where('games.id', id).first();
+
+    console.log("game", game)
+
+    return game;
+}
+
+
 async function getGamesBySeriesIdAndGameId(seriesId, gameId) {
     const game = await db('games')
         .innerJoin('teams', 'games.firstTeamId', 'teams.teamId')
@@ -165,5 +179,6 @@ module.exports = {
     getGeneralStatsBySeriesIdAndGameId,
     getPersonalStatsBySeriesIdAndGameId,
     leads,
-    bestOfSeries
+    bestOfSeries,
+    getGamesById
 }
