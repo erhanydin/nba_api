@@ -84,6 +84,7 @@ async function getFavsById(favs_id) {
     } else {
         favs.forEach((item) => {
             responseData.notes.push({
+                "note_id": item.note_id,
                 "note_details": item.note_details,
                 "note_date": item.note_date
             })
