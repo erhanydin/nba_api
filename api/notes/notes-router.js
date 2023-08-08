@@ -48,7 +48,6 @@ router.put("/:note_id", async (req, res, next) => {
             const newNote = {
                 note_details: note_details,
                 note_date: new Date().toLocaleString(),
-                favs_id: req.body.favs_id
             }
 
             let willBeUpdatedNote = await notesModel.updateNote(newNote, req.params.note_id);
